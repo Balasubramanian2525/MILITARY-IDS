@@ -1,0 +1,18 @@
+# User Manual — Military IDs Management System
+
+## Overview
+The Military IDs Management System provides secure, role-based access to create, manage, and validate military identification cards.  
+This guide explains step-by-step usage for **Operators** and **Administrators**.
+
+---
+
+## Roles
+- **Administrator**
+  - Full privileges: create users, revoke IDs, view audit logs.
+- **Operator**
+  - Limited privileges: create, verify, and renew IDs.
+
+---
+
+## Logging In
+1. Navigate to the web app: `http://local
