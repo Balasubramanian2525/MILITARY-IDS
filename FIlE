@@ -1,0 +1,31 @@
+# Military IDs Management System
+
+A secure, auditable prototype for managing military identification cards — creation, verification, renewal, and audit logging — with clear user documentation and standard operating procedures.  
+This repository contains the codebase, documentation, and sample data used during the project.
+
+---
+
+## Key features
+
+- **ID Card Lifecycle Management** — Create, validate, renew, revoke military IDs.
+- **Role-based access** — Separate admin and operator privileges.
+- **Secure data handling** — Basic patterns for encryption-at-rest and audit logging (prototype).
+- **User documentation & SOPs** — Step-by-step guides for administrators and end users.
+- **Extensible architecture** — Clean separation of frontend, backend, and data layers for easy extension.
+
+---
+
+## Tech stack (prototype)
+
+- Backend: Python (Flask / FastAPI suggested)
+- Database: SQLite (prototype) — switchable to PostgreSQL for production
+- Frontend: React (or simple server-rendered templates)
+- Auth: Role-based tokens (JWT prototype)
+- Documentation: Markdown under `/docs`
+
+> This repo contains a prototype and documentation. It is **not** production-ready for sensitive deployments — follow your organization’s security policies before any real deployment.
+
+---
+
+## Repository structure
+
