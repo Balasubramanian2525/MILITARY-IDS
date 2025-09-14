@@ -1,0 +1,35 @@
+# Architecture — Military IDs Management System
+
+## Overview
+The system is a **modular web application** with separate backend, frontend, and database layers. It follows a **client-server model** with REST APIs.
+
+---
+
+## Components
+1. **Frontend (React)**
+   - Provides UI for operators/admins.
+   - Handles login, ID management, and search.
+
+2. **Backend (Flask API)**
+   - Exposes REST endpoints for ID operations.
+   - Implements role-based access control.
+   - Manages audit logs and security.
+
+3. **Database (SQLite prototype)**
+   - Stores ID records, user accounts, audit logs.
+   - Switchable to PostgreSQL for production.
+
+4. **Authentication**
+   - JWT tokens for session management.
+   - Admin/Operator roles.
+
+---
+
+## Data Flow
+
+```mermaid
+flowchart TD
+  A[User - Browser] --> B[Frontend - React]
+  B --> C[Backend - Flask API]
+  C --> D[(Database - SQLite/PostgreSQL)]
+  C --> E[Audit Log Service]
