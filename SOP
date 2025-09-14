@@ -1,0 +1,62 @@
+# Standard Operating Procedures (SOP) — Military IDs System
+
+## Purpose
+This SOP defines procedures for operating and maintaining the Military IDs Management System.
+
+---
+
+## User Account Management
+- Admins must create operator accounts via **Admin → Users**.
+- Passwords must meet complexity requirements.
+- Operators must reset default passwords on first login.
+
+---
+
+## ID Issuance Workflow
+1. Operator enters ID details and uploads documents.
+2. Admin periodically audits new records for correctness.
+3. Issued IDs are logged automatically.
+
+---
+
+## Renewal Workflow
+- Renewals must be processed 30 days before expiry.
+- Operator must verify supporting documents before submission.
+- Admin must validate renewal in audit logs weekly.
+
+---
+
+## Revocation Workflow
+- Admin verifies request from command authority.
+- Revocation reason is recorded in system.
+- Status is immediately updated to "Revoked."
+- Notification sent to relevant security staff.
+
+---
+
+## Audit & Logging
+- All operations (create/renew/revoke) are logged.
+- Admins must review audit logs weekly.
+- Logs are immutable and exportable to CSV for compliance.
+
+---
+
+## Data Backup
+- Database backups occur daily at midnight (cron job).
+- Weekly encrypted backups stored offsite.
+- Backup restoration tested quarterly.
+
+---
+
+## Security Protocols
+- All users must enable 2FA.
+- System must run behind HTTPS.
+- Access to the backend restricted by firewall rules.
+- Secrets stored in environment variables, not code.
+
+---
+
+## Incident Handling
+- Report anomalies to the security officer immediately.
+- Admin disables compromised accounts on suspicion.
+- Logs exported for forensic review.
